@@ -8,28 +8,34 @@
   <script src="script.js"></script>
   <title>Precisamos pensar em um título</title>
 </head>
-<body class="w-screen h-screen bg-zinc-50">
-  <div class="w-3xs h-full bg-white flex flex-col items-center">
-    <img src="./assets/ods-logo.svg" alt="">
-    <div class="mt-16 flex flex-col items-center gap-4">
-      <a href="#" class="inline-flex justify-center items-center gap-1 font-semibold border-2 border-sky-700 w-32 py-1.5 rounded-lg hover:bg-sky-700 hover:text-white transition-colors">
+<body class="w-screen h-screen bg-zinc-50 antialiased">
+  <aside id="sidebar" class="group w-3xs [&.collapsed]:w-11 h-full bg-white flex flex-col items-center relative transform transition-all duration-300">
+    <button type="button" id="hide_menu" class="absolute top-4 right-4 size-6 cursor-pointer text-black hover:scale-105 transition-all outline-none border-0 group-[.collapsed]:hidden">
+      <i data-lucide="menu"></i>
+    </button>
+    <button type="button" id="show_menu" class="mt-4 hidden group-[.collapsed]:flex">
+      <i data-lucide="menu"></i>
+    </button>
+    <img src="./assets/ods-logo.svg" alt="ODS Logo" class="group-[.collapsed]:hidden">
+    <div class="mt-16 group-[.collapsed]:mt-4 flex flex-col items-center gap-4">
+      <a href="#" class="inline-flex justify-center items-center gap-1 font-semibold border-2 border-sky-700 w-32 group-[.collapsed]:w-10 group-[.collapsed]:border-0 py-1.5 rounded-lg hover:bg-sky-700 hover:text-white transition-colors">
         <i data-lucide="house" class="size-4"></i>
-        <p class="text-base">Início</p>
+        <p class="text-base group-[.collapsed]:hidden">Início</p>
       </a>
-      <a href="#" class="inline-flex justify-center items-center gap-1 font-semibold border-2 border-sky-700 w-32 py-1.5 rounded-lg hover:bg-sky-700 hover:text-white transition-colors">
+      <a href="#" class="inline-flex justify-center items-center gap-1 font-semibold border-2 border-sky-700 w-32 group-[.collapsed]:w-10 group-[.collapsed]:border-0 py-1.5 rounded-lg hover:bg-sky-700 hover:text-white transition-colors">
         <i data-lucide="house" class="size-4"></i>
-        <p class="text-base">Início</p>
+        <p class="text-base group-[.collapsed]:hidden">Início</p>
       </a>
-      <a href="#" class="inline-flex justify-center items-center gap-1 font-semibold border-2 border-sky-700 w-32 py-1.5 rounded-lg hover:bg-sky-700 hover:text-white transition-colors">
+      <a href="#" class="inline-flex justify-center items-center gap-1 font-semibold border-2 border-sky-700 w-32 group-[.collapsed]:w-10 group-[.collapsed]:border-0 py-1.5 rounded-lg hover:bg-sky-700 hover:text-white transition-colors">
         <i data-lucide="house" class="size-4"></i>
-        <p class="text-base">Início</p>
+        <p class="text-base group-[.collapsed]:hidden">Início</p>
       </a>
-      <a href="#" class="inline-flex justify-center items-center gap-1 font-semibold border-2 border-sky-700 w-32 py-1.5 rounded-lg hover:bg-sky-700 hover:text-white transition-colors">
+      <a href="#" class="inline-flex justify-center items-center gap-1 font-semibold border-2 border-sky-700 w-32 group-[.collapsed]:w-10 group-[.collapsed]:border-0 py-1.5 rounded-lg hover:bg-sky-700 hover:text-white transition-colors">
         <i data-lucide="house" class="size-4"></i>
-        <p class="text-base">Início</p>
+        <p class="text-base group-[.collapsed]:hidden">Início</p>
       </a>
     </div>
-  </div>
+  </aside>
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script> <!-- Development version -->
   <script src="https://unpkg.com/lucide@latest"></script> <!-- Production version -->
   <script>
