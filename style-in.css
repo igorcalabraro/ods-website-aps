@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @theme {
+  --default-font-family: 'Montserrat', 'sans-serif';
   --color-default-grey: #EBEBEB;
 }
 
