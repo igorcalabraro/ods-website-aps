@@ -10,4 +10,10 @@ $(document).ready(function() {
   $('#dark-mode').on('click', function() {
     $('html').addClass('dark')
   })
+
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    $('html').addClass('dark');
+  } else {
+    $('html').removeClass('dark');
+  }
 })
