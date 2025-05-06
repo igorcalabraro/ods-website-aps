@@ -299,6 +299,9 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+  .opacity-100 {
+    opacity: 100%;
+  }
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
@@ -313,10 +316,18 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
+  .transition-opacity {
+    transition-property: opacity;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
   .transition-transform {
     transition-property: transform, translate, scale, rotate;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .delay-300 {
+    transition-delay: 300ms;
   }
   .duration-300 {
     --tw-duration: 300ms;
@@ -377,6 +388,16 @@
   .group-\[\.collapsed\]\:bg-amber-300 {
     &:is(:where(.group):is(.collapsed) *) {
       background-color: var(--color-amber-300);
+    }
+  }
+  .group-\[\.collapsed\]\:opacity-0 {
+    &:is(:where(.group):is(.collapsed) *) {
+      opacity: 0%;
+    }
+  }
+  .group-\[\.collapsed\]\:delay-0 {
+    &:is(:where(.group):is(.collapsed) *) {
+      transition-delay: 0ms;
     }
   }
   .hover\:scale-105 {
