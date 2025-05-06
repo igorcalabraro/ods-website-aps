@@ -13,6 +13,10 @@
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-3xs: 16rem;
+    --text-base: 1rem;
+    --text-base--line-height: calc(1.5 / 1);
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
     --font-weight-semibold: 600;
     --radius-lg: 0.5rem;
     --default-transition-duration: 150ms;
@@ -179,6 +183,18 @@
   .table {
     display: table;
   }
+  .size-3 {
+    width: calc(var(--spacing) * 3);
+    height: calc(var(--spacing) * 3);
+  }
+  .size-4 {
+    width: calc(var(--spacing) * 4);
+    height: calc(var(--spacing) * 4);
+  }
+  .size-6 {
+    width: calc(var(--spacing) * 6);
+    height: calc(var(--spacing) * 6);
+  }
   .h-full {
     height: 100%;
   }
@@ -259,6 +275,14 @@
   }
   .py-1\.5 {
     padding-block: calc(var(--spacing) * 1.5);
+  }
+  .text-base {
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
+  }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
   }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
