@@ -36,17 +36,30 @@
       </a>
     </div>
   </aside>
-  <header class="bg-white w-full h-20 flex items-center justify-between px-8 select-none dark:bg-zinc-800">
-    <img src="./assets/ods-logo-compacted.png" alt="Logo ODS" class="size-11 pointer-events-none">
-    <div class="w-80 h-11 inline-flex bg-default-grey dark:bg-neutral-700 rounded-2xl px-4 justify-center items-center gap-1">
-      <input type="text" placeholder="O que você procura?" class="flex-1 outline-none text-black dark:text-zinc-100">
-      <i data-lucide="search" class="size-6 transition-all hover:scale-110 hover:cursor-pointer text-black dark:text-zinc-100"></i>
-    </div>
-    <div class="w-24 h-11 inline-flex bg-default-grey dark:bg-neutral-700 rounded-2xl px-4 items-center justify-between">
-      <i data-lucide="sun" id="light-mode" class="size-6 cursor-pointer transition text-yellow-500"></i>
-      <i data-lucide="moon" id="dark-mode" class="size-6 cursor-pointer transition text-indigo-600 dark:text-indigo-500"></i>
-    </div>
-  </header>
+  <div class="flex flex-col w-full h-full">
+    <header class="bg-white w-full h-20 flex items-center justify-between px-8 select-none dark:bg-zinc-800">
+      <img src="./assets/ods-logo-compacted.png" alt="Logo ODS" class="size-11 pointer-events-none">
+      <div class="w-80 h-11 inline-flex bg-default-grey dark:bg-neutral-700 rounded-2xl px-4 justify-center items-center gap-1">
+        <input type="text" placeholder="O que você procura?" class="flex-1 outline-none text-black dark:text-zinc-100">
+        <i data-lucide="search" class="size-6 transition-all hover:scale-110 hover:cursor-pointer text-black dark:text-zinc-100"></i>
+      </div>
+      <div class="w-24 h-11 inline-flex bg-default-grey dark:bg-neutral-700 rounded-2xl px-4 items-center justify-between">
+        <i data-lucide="sun" id="light-mode" class="size-6 cursor-pointer transition text-yellow-500"></i>
+        <i data-lucide="moon" id="dark-mode" class="size-6 cursor-pointer transition text-indigo-600 dark:text-indigo-500"></i>
+      </div>
+    </header>
+    <nav class="flex items-center justify-center w-full h-12 px-8">
+      <a href="#" class="w-32 text-center text-base hover:font-semibold hover:border-b-4 hover:border-b-sky-700">Início</a>
+      <a href="#" class="w-32 text-center text-base hover:font-semibold hover:border-b-4 hover:border-b-sky-700">Sobre a ONU</a>
+      <a href="#" class="w-32 text-center text-base hover:font-semibold hover:border-b-4 hover:border-b-sky-700">ODS</a>
+      <a href="#" class="w-32 text-center text-base hover:font-semibold hover:border-b-4 hover:border-b-sky-700">História</a>
+      <a href="#" class="w-32 text-center text-base hover:font-semibold hover:border-b-4 hover:border-b-sky-700">Gráfico (sla)</a>
+      <a href="#" class="w-32 text-center text-base hover:font-semibold hover:border-b-4 hover:border-b-sky-700">Pilares</a>
+      <a href="#" class="w-32 text-center text-base hover:font-semibold hover:border-b-4 hover:border-b-sky-700">Agenda 2030</a>
+      <a href="#" class="w-32 text-center text-base hover:font-semibold hover:border-b-4 hover:border-b-sky-700">Sobre nós</a>
+    </nav>
+  </div>
+  
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script> <!-- Development version -->
   <script src="https://unpkg.com/lucide@latest"></script> <!-- Production version -->
   <script>
