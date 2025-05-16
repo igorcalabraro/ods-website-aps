@@ -225,6 +225,9 @@
   .mt-72 {
     margin-top: calc(var(--spacing) * 72);
   }
+  .mb-16 {
+    margin-bottom: calc(var(--spacing) * 16);
+  }
   .flex {
     display: flex;
   }
@@ -488,6 +491,9 @@
   .text-yellow-500 {
     color: var(--color-yellow-500);
   }
+  .text-zinc-900 {
+    color: var(--color-zinc-900);
+  }
   .text-zinc-950 {
     color: var(--color-zinc-950);
   }
@@ -645,10 +651,24 @@
       }
     }
   }
+  .hover\:text-indigo-600 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-indigo-600);
+      }
+    }
+  }
   .hover\:text-white {
     &:hover {
       @media (hover: hover) {
         color: var(--color-white);
+      }
+    }
+  }
+  .hover\:text-yellow-500 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-yellow-500);
       }
     }
   }
@@ -675,6 +695,15 @@
   .dark\:text-zinc-100 {
     &:where(.dark, .dark *) {
       color: var(--color-zinc-100);
+    }
+  }
+  .hover\:dark\:text-indigo-500 {
+    &:hover {
+      @media (hover: hover) {
+        &:where(.dark, .dark *) {
+          color: var(--color-indigo-500);
+        }
+      }
     }
   }
   .\[\&\.collapsed\]\:w-11 {
