@@ -23,10 +23,15 @@ $(document).ready(function() {
   } else {
     $('html').removeClass('dark');
   }
-  setTimeout(function() {
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.has('sidebar') && urlParams.get('sidebar') === 'collapsed') {
-      $('#sidebar').addClass('collapsed');
+
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.has('sidebar') && urlParams.get('sidebar') === 'collapsed') {
+    $('#sidebar').addClass('collapsed');
+    $('html, body').animate({
+      scrollTop: $('#sidebar').offset().top
+    }, 500, function() {
+      $('#sidebar').css('overflow', 'hidden');
+    })
+  }
     }
-  }, 1000)
 })
