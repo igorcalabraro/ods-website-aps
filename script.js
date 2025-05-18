@@ -1,6 +1,13 @@
 $(document).ready(function() {
   $('.aside-menu').on('click', function() {
     $('#sidebar').toggleClass('collapsed');
+    // update url with the current state
+    if ($('#sidebar').hasClass('collapsed')) {
+      window.history.pushState({ sidebar: 'collapsed' }, '', '?sidebar=collapsed');
+    } else {
+      // remove the sidebar parameter from the URL
+      window.history.pushState({}, '', window.location.pathname);
+    }
   });
 
   $('#light-mode').on('click', function() {
@@ -21,4 +28,10 @@ $(document).ready(function() {
     const odsId = $(this).attr("data-ods")
     window.location.href = window.location.origin + "/ods/" + odsId
   })
+  setTimeout(function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('sidebar') && urlParams.get('sidebar') === 'collapsed') {
+      $('#sidebar').addClass('collapsed');
+    }
+  }, 1000)
 })
