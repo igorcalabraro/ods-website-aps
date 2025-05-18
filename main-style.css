@@ -93,6 +93,15 @@ body {
   @apply hover:text-indigo-600 hover:dark:text-indigo-500;
 }
 
+/* ODS GRID */
+.ods-list-grid {
+  @apply grid grid-cols-6 grid-rows-3 mt-8 mb-16 mx-auto w-fit;
+}
+
+.ods-card {
+  @apply size-40 transition hover:scale-105 hover:cursor-pointer;
+}
+
 /* FOOTER */
 .footer-container {
   @apply mt-8 w-full h-64 bg-default-grey dark:bg-zinc-800 text-black dark:text-zinc-100 flex items-center justify-center gap-16;
