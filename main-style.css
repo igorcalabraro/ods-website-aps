@@ -8,15 +8,23 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+
+body {
+  @apply h-max bg-zinc-50 dark:bg-zinc-900 antialiased flex;
+}
+
+/* UTILITIES */
 .dark {
   color-scheme: dark;
 }
 
-/* UTILITIES */
 .column {
   @apply flex flex-col;
 }
 
+.underline-text {
+  @apply underline decoration-1 hover:font-medium;
+}
 
 /* NAVBAR */
 .nav-bar {
@@ -25,10 +33,6 @@
 
 .nav-link {
   @apply w-32 text-center text-base hover:font-semibold hover:border-b-4 hover:border-b-default-blue;
-}
-
-.underline-text {
-  @apply underline decoration-1;
 }
 
 /* SIDEBAR */
@@ -42,6 +46,10 @@
 
 .sidebar-button {
   @apply inline-flex justify-center items-center gap-1 font-semibold w-full group-[.collapsed]:w-10 group-[.collapsed]:border-0 py-1.5 rounded-lg hover:bg-default-blue/70 [.active]:bg-default-blue/70 hover:text-white dark:text-zinc-100 transition-colors;
+}
+
+.sidebar-icon {
+  @apply size-4;
 }
 
 .sidebar-text {
