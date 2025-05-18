@@ -33,5 +33,14 @@ $(document).ready(function() {
       $('#sidebar').css('overflow', 'hidden');
     })
   }
+
+  const sidebarButtons = $('.sidebar-button');
+  for (button of sidebarButtons) {
+    const buttonElement = $(button);
+    const buttonHref = buttonElement.attr('href')
+    const windowPathname = window.location.pathname.replace("index.html", "")
+    if (buttonHref === windowPathname) {
+      buttonElement.addClass('active');
     }
+  }
 })
