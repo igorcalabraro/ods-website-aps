@@ -3,6 +3,7 @@
 @theme {
   --default-font-family: 'Montserrat', 'sans-serif';
   --color-default-grey: #EBEBEB;
+  --color-default-blue: var(--color-sky-700);
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -20,7 +21,7 @@
 }
 
 .nav-link {
-  @apply w-32 text-center text-base hover:font-semibold hover:border-b-4 hover:border-b-sky-700;
+  @apply w-32 text-center text-base hover:font-semibold hover:border-b-4 hover:border-b-default-blue;
 }
 
 .underline-text {
@@ -34,7 +35,7 @@
 }
 
 .sidebar-button {
-  @apply inline-flex justify-center items-center gap-1 font-semibold w-full group-[.collapsed]:w-10 group-[.collapsed]:border-0 py-1.5 rounded-lg hover:bg-sky-700/70 hover:text-white dark:text-zinc-100 transition-colors;
+  @apply inline-flex justify-center items-center gap-1 font-semibold w-full group-[.collapsed]:w-10 group-[.collapsed]:border-0 py-1.5 rounded-lg hover:bg-default-blue/70 [.active]:bg-default-blue/70 hover:text-white dark:text-zinc-100 transition-colors;
 }
 
 .sidebar-text {
