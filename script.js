@@ -11,17 +11,22 @@ $(document).ready(function() {
   });
 
   $('#light-mode').on('click', function() {
-    $('html').removeClass('dark')
+    setTheme('light');
   })
 
   $('#dark-mode').on('click', function() {
-    $('html').addClass('dark')
+    setTheme('dark');
   })
 
-  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    $('html').addClass('dark');
+  const themeStorage = localStorage.getItem('theme');
+  if (themeStorage) {
+    setTheme(themeStorage, true);
   } else {
-    $('html').removeClass('dark');
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      setTheme('dark')
+    } else {
+      setTheme('light')
+    }
   }
 
   const urlParams = new URLSearchParams(window.location.search);
@@ -44,3 +49,12 @@ $(document).ready(function() {
     }
   }
 })
+
+function setTheme(mode, ignoreSave) {
+  if (mode != 'light' && mode != 'dark') return;
+  (mode == 'light' ? $('html').removeClass('dark') : $('html').addClass('dark'));
+  if (!ignoreSave) {
+    localStorage.setItem('theme', mode);
+  }
+  return true
+}
