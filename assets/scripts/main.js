@@ -43,7 +43,8 @@ $(document).ready(function() {
   for (button of sidebarButtons) {
     const buttonElement = $(button);
     const buttonHref = buttonElement.attr('href')
-    const windowPathname = window.location.pathname.replace("index.html", "")
+    const windowPathname = "/" + window.location.pathname.split("/").pop().replace(".html", "")
+    console.log(buttonHref, windowPathname)
     if (buttonHref === windowPathname) {
       buttonElement.addClass('active');
     }
