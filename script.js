@@ -23,11 +23,6 @@ $(document).ready(function() {
   } else {
     $('html').removeClass('dark');
   }
-
-  $(".ods").on('click', function() {
-    const odsId = $(this).attr("data-ods")
-    window.location.href = window.location.origin + "/ods/" + odsId
-  })
   setTimeout(function() {
     const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.has('sidebar') && urlParams.get('sidebar') === 'collapsed') {
