@@ -48,8 +48,6 @@
   @apply text-base group-[.collapsed]:hidden;
 }
 
-
-
 /* HEADER */
 .header-bar {
   @apply bg-white w-full h-20 flex items-center justify-between px-8 select-none dark:bg-zinc-800;
