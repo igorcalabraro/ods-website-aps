@@ -75,3 +75,8 @@
 .theme-icon-dark {
   @apply hover:text-indigo-600 hover:dark:text-indigo-500;
 }
+
+/* FOOTER */
+.footer-container {
+  @apply mt-8 w-full h-64 bg-default-grey dark:bg-zinc-800 text-black dark:text-zinc-100 flex items-center justify-center gap-16;
+}
