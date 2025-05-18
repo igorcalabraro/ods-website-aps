@@ -11,6 +11,10 @@
   color-scheme: dark;
 }
 
+/* UTILITIES */
+.column {
+  @apply flex flex-col;
+}
 .nav-bar {
   @apply flex items-center justify-center w-full h-12 px-8 text-black dark:text-zinc-100 select-none;
 }
