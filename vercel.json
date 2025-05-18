@@ -1,5 +1,8 @@
 {
   "rewrites": [
-    {"source": "/(.*)", "destination": "/"}
+    {
+      "source": "/ods/:id",
+      "destination": "/ods/:id.html"
+    }
   ]
 }
