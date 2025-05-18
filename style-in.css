@@ -17,14 +17,20 @@
 
 .underline-text {
   @apply underline decoration-1
+.sidebar {
+  @apply w-3xs bg-white dark:bg-zinc-800 flex flex-col items-center relative transform transition-all duration-300 select-none py-7 [&.collapsed]:w-11 [&.collapsed]:py-0;
 }
 
 .sidebar-button {
-  @apply inline-flex justify-center items-center gap-1 font-semibold w-full group-[.collapsed]:w-10 group-[.collapsed]:border-0 py-1.5 rounded-lg hover:bg-sky-700/70 hover:text-white dark:text-zinc-100 transition-colors
+  @apply inline-flex justify-center items-center gap-1 font-semibold w-full group-[.collapsed]:w-10 group-[.collapsed]:border-0 py-1.5 rounded-lg hover:bg-sky-700/70 hover:text-white dark:text-zinc-100 transition-colors;
 }
 
 .sidebar-text {
-  @apply text-base group-[.collapsed]:hidden
+  @apply text-base group-[.collapsed]:hidden;
+}
+
+
+
 /* HEADER */
 .header-bar {
   @apply bg-white w-full h-20 flex items-center justify-between px-8 select-none dark:bg-zinc-800;
