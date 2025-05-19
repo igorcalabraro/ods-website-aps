@@ -11,9 +11,15 @@ $(document).ready(function() {
       });
     }
   }
+
+  const odsIcons = $('.ods-icon');
+  odsIcons.on('click', function() {
+    const elementAlt = $(this).attr('alt');
+    const odsId = elementAlt.replace(/[^0-9]/g, '');
+    window.location.href = `/ods/${odsId}`;
+  });
 })
 
-// function moveToOds receive onclick event, and need to get attr data-ods-id and go to that ods
 function moveToOds(event) {
   const odsId = $(event).attr('data-ods-id');
   const odsElement = $(`#ods-${odsId}`);
