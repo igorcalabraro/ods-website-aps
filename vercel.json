@@ -3,6 +3,10 @@
     {
       "source": "/ods/:id",
       "destination": "/ods/:id.html"
+    },
+    {
+      "source": "/ods",
+      "destination": "ods_list.html"
     }
   ]
 }
