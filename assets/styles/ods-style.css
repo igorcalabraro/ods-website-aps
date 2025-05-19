@@ -20,7 +20,7 @@
 }
 
 .ods-icon {
-  @apply size-(--ods-icon-size) my-auto;
+  @apply size-(--ods-icon-size) mt-16;
 }
 
 .ods-title {
