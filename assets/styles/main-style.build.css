@@ -11,6 +11,7 @@
     --color-indigo-600: oklch(51.1% 0.262 276.966);
     --color-zinc-50: oklch(98.5% 0 0);
     --color-zinc-100: oklch(96.7% 0.001 286.375);
+    --color-zinc-500: oklch(55.2% 0.016 285.938);
     --color-zinc-800: oklch(27.4% 0.006 286.033);
     --color-zinc-900: oklch(21% 0.006 285.885);
     --color-neutral-700: oklch(37.1% 0 0);
@@ -205,9 +206,6 @@
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
   }
-  .flex {
-    display: flex;
-  }
   .grid {
     display: grid;
   }
@@ -224,44 +222,15 @@
   .w-32 {
     width: calc(var(--spacing) * 32);
   }
-  .max-w-xl {
-    max-width: var(--container-xl);
-  }
-  .flex-1 {
-    flex: 1;
-  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
   .cursor-pointer {
     cursor: pointer;
   }
-  .flex-col {
-    flex-direction: column;
-  }
-  .items-center {
-    align-items: center;
-  }
-  .justify-between {
-    justify-content: space-between;
-  }
-  .gap-6 {
-    gap: calc(var(--spacing) * 6);
-  }
   .border-0 {
     border-style: var(--tw-border-style);
     border-width: 0px;
-  }
-  .px-36 {
-    padding-inline: calc(var(--spacing) * 36);
-  }
-  .text-4xl {
-    font-size: var(--text-4xl);
-    line-height: var(--tw-leading, var(--text-4xl--line-height));
-  }
-  .text-lg {
-    font-size: var(--text-lg);
-    line-height: var(--tw-leading, var(--text-lg--line-height));
   }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
@@ -594,6 +563,33 @@ body {
       color: var(--color-yellow-500);
     }
   }
+}
+.content-container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: calc(var(--spacing) * 36);
+  color: var(--color-black);
+  &:where(.dark, .dark *) {
+    color: var(--color-zinc-100);
+  }
+}
+.content-section {
+  display: flex;
+  max-width: var(--container-xl);
+  flex-direction: column;
+  gap: calc(var(--spacing) * 6);
+}
+.content-title {
+  font-size: var(--text-4xl);
+  line-height: var(--tw-leading, var(--text-4xl--line-height));
+  --tw-font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-semibold);
+}
+.content-description {
+  font-size: var(--text-lg);
+  line-height: var(--tw-leading, var(--text-lg--line-height));
 }
 .theme-icon-dark {
   &:hover {

@@ -93,6 +93,23 @@ body {
   @apply hover:text-yellow-500;
 }
 
+/* CONTENT */
+.content-container {
+  @apply flex flex-1 justify-between items-center px-36 text-black dark:text-zinc-100;
+}
+
+.content-section {
+  @apply flex flex-col gap-6 max-w-xl;
+}
+
+.content-title {
+  @apply font-semibold text-4xl;
+}
+
+.content-description {
+  @apply text-lg;
+}
+
 .theme-icon-dark {
   @apply hover:text-indigo-600 hover:dark:text-indigo-500;
 }
