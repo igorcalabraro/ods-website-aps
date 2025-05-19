@@ -48,6 +48,25 @@ $(document).ready(function() {
       buttonElement.addClass('active');
     }
   }
+
+  const searchBar = $(".search-input")
+  for (search of searchBar) {
+    const searchElement = $(search);
+    searchElement.on('input', function() {
+      const searchValue = searchElement.val().toLowerCase();
+      console.log(searchValue);
+      const odsCards = $('.ods-card');
+      odsCards.each(function() {
+        const cardText = $(this).attr("alt").toLowerCase();
+        const parentElement = $(this).parent();
+        if (cardText.includes(searchValue)) {
+          parentElement.show();
+        } else {
+          parentElement.hide();
+        }
+      });
+    })
+  }
 })
 
 function setTheme(mode, ignoreSave) {
