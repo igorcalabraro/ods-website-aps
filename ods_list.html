@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -2920,6 +2921,23 @@
   <script src="https://unpkg.com/lucide@latest"></script>
   <script>
     lucide.createIcons()
+
+    ScrollReveal().reveal('.ods-card', {
+    distance: '40px',
+    duration: 800,
+    easing: 'ease',
+    origin: 'bottom',
+    opacity: 0,
+    interval: 80
+  });
+
+  ScrollReveal().reveal('.ods-data-card, .ods-chart-container', {
+    distance: '20px',
+    duration: 1000,
+    origin: 'right',
+    opacity: 0,
+    interval: 60
+  });
   </script>
 </body>
 </html>
