@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/styles/main-style.build.css">
+  <link rel="stylesheet" href="../assets/styles/ods-style.build.css">
+  <link rel="shortcut icon" href="../assets/ods-logo-compacted.png" type="image/png">
+  <link rel="website icon" href="../assets/ods-logo-compacted.png" type="image/png">
+  <meta property="og:site_name" content="Precisamos pensar em um título">
+  <meta property="og:url" content="https://ods.igorcalabraro.com.br">
+  <meta property="og:title" content="Precisamos pensar em um título">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Precisamos pensar em um título">
+  <script src="../assets/scripts/main.js"></script>
+  <title>Água potável e saneamento (ODS 6) | Precisamos pensar em um título</title>
+</head>
+<body>
+  <!-- Sidebar (aside) -->
+  <aside id="sidebar" class="group sidebar">
+    <button type="button" class="aside-menu sidebar-to-collapse">
+      <i data-lucide="menu"></i>
+    </button>
+    <button type="button" class="aside-menu sidebar-from-collapse">
+      <i data-lucide="menu"></i>
+    </button>
+    <img src="../assets/ods-logo.png" alt="Logo ODS" class="sidebar-logo" />
+    <div class="sidebar-buttons">
+      <a href="/" class="sidebar-button">
+        <i data-lucide="house" class="sidebar-icon"></i>
+        <p class="sidebar-text">Início</p>
+      </a>
+      <a target="_blank" href="https://youtu.be/Fev2MHAa-qo" class="sidebar-button">
+        <i data-lucide="video" class="sidebar-icon"></i>
+        <p class="sidebar-text">Vídeos</p>
+      </a>
+      <a target="_blank" href="https://www.un.org/about-us/member-states" class="sidebar-button">
+        <i data-lucide="flag" class="sidebar-icon"></i>
+        <p class="sidebar-text">Países</p>
+      </a>
+      <a target="_blank" href="https://dashboards.sdgindex.org/rankings" class="sidebar-button">
+        <i data-lucide="sword" class="sidebar-icon"></i>
+        <p class="sidebar-text">Desafios da ODS</p>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Main content -->
+  <div class="max-container">
+    <!-- Header -->
+    <header class="header-bar">
+      <img src="../assets/ods-logo-compacted.png" alt="Logo ODS" class="header-logo">
+      <div class="search-container">
+        <input type="text" placeholder="O que você procura?" class="search-input">
+        <i data-lucide="search" class="search-icon"></i>
+      </div>
+      <div class="theme-toggle">
+        <i data-lucide="sun" id="light-mode" class="theme-icon theme-icon-light"></i>
+        <i data-lucide="moon" id="dark-mode" class="theme-icon theme-icon-dark"></i>
+      </div>
+    </header>
+
+    <!-- Nav links -->
+    <nav class="nav-bar">
+      <a href="/" class="nav-link">Início</a>
+      <a target="_blank" href="https://brasil.un.org/pt-br/279573-sobre-onu" class="nav-link">Sobre a ONU</a>
+      <a href="#" class="nav-link">ODS</a>
+      <a target="_blank" href="https://brasil.un.org/pt-br/stories" class="nav-link">História</a>
+      <a target="_blank" href="https://dashboards.sdgindex.org/map" class="nav-link">Gráfico</a>
+      <a href="#" class="nav-link">Pilares</a>
+      <a target="_blank" href="https://brasil.un.org/pt-br/91863-agenda-2030-para-o-desenvolvimento-sustent%C3%A1vel" class="nav-link">Agenda 2030</a>
+    </nav>
+
+    <!-- Content -->
+    <div class="ods-container">
+      <div class="ods-data-card">
+        <img src="../assets/ods-icons/6.svg" alt="ODS 6" class="ods-icon" >
+        <div class="ods-description">
+          <h1 class="ods-title">Objetivo de Desenvolvimento Sustentável 6</h1>
+          <h2 class="ods-heading">Água potável e saneamento</h2>
+          <div class="ods-goals">
+            <div class="ods-goal-container">
+              <span class="ods-goal-title">
+                Objetivo 6. Assegurar a disponibilidade e gestão sustentável da água e saneamento para todas e todos
+              </span>
+            </div>
+            <div class="ods-goal-container">
+              <span class="ods-goal-title">6.1:</span>
+              <span class="ods-goal-content">
+                Até 2030, alcançar o acesso universal e equitativo a água potável e segura para todos
+              </span>
+            </div>
+            <div class="ods-goal-container">
+              <span class="ods-goal-title">6.2:</span>
+              <span class="ods-goal-content">
+                Até 2030, alcançar o acesso a saneamento e higiene adequados e equitativos para todos, e acabar com a defecação a céu aberto, com especial atenção para as necessidades das mulheres e meninas e daqueles em situação de vulnerabilidade
+              </span>
+            </div>
+            <div class="ods-goal-container">
+              <span class="ods-goal-title">6.3:</span>
+              <span class="ods-goal-content">
+                Até 2030, melhorar a qualidade da água, reduzindo a poluição, eliminando despejo e minimizando a liberação de produtos químicos e materiais perigosos, reduzindo à metade a proporção de águas residuais não tratadas e aumentando substancialmente a reciclagem e reutilização segura globalmente
+              </span>
+            </div>
+            <div class="ods-goal-container">
+              <span class="ods-goal-title">6.4:</span>
+              <span class="ods-goal-content">
+                Até 2030, aumentar substancialmente a eficiência do uso da água em todos os setores e assegurar retiradas sustentáveis e o abastecimento de água doce para enfrentar a escassez de água, e reduzir substancialmente o número de pessoas que sofrem com a escassez de água
+              </span>
+            </div>
+            <div class="ods-goal-container">
+              <span class="ods-goal-title">6.5:</span>
+              <span class="ods-goal-content">
+                Até 2030, implementar a gestão integrada dos recursos hídricos em todos os níveis, inclusive via cooperação transfronteiriça, conforme apropriado
+              </span>
+            </div>
+            <div class="ods-goal-container">
+              <span class="ods-goal-title">6.6:</span>
+              <span class="ods-goal-content">
+                Até 2020, proteger e restaurar ecossistemas relacionados com a água, incluindo montanhas, florestas, zonas úmidas, rios, aquíferos e lagos
+              </span>
+            </div>
+            <div class="ods-goal-container">
+              <span class="ods-goal-title">6.a:</span>
+              <span class="ods-goal-content">
+                Até 2030, ampliar a cooperação internacional e o apoio à capacitação para os países em desenvolvimento em atividades e programas relacionados à água e saneamento, incluindo a coleta de água, a dessalinização, a eficiência no uso da água, o tratamento de efluentes, a reciclagem e as tecnologias de reuso
+              </span>
+            </div>
+            <div class="ods-goal-container">
+              <span class="ods-goal-title">6.b:</span>
+              <span class="ods-goal-content">
+                Apoiar e fortalecer a participação das comunidades locais, para melhorar a gestão da água e do saneamento
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ods-chart-container">
+        <iframe 
+          src="https://ourworldindata.org/grapher/prevalence-of-undernourishment?tab=chart" 
+          loading="lazy" 
+          class="ods-chart-frame"
+          allow="web-share; clipboard-write">
+        </iframe>
+        <div class="ods-chart-details">
+          <h2 class="ods-chart-title">
+            Percentagem da população subnutrida
+          </h2>
+          <h3 class="ods-chart-subtitle">
+            Filtrado por países
+          </h3>
+        </div>
+      </div>
+
+      <div class="ods-chart-container">
+        <iframe 
+          src="https://ourworldindata.org/grapher/share-of-children-with-a-weight-too-low-for-their-height-wasting?tab=map" 
+          loading="lazy" 
+          class="ods-chart-frame"
+          allow="web-share; clipboard-write">
+        </iframe>
+        <div class="ods-chart-details">
+          <h2 class="ods-chart-title">
+            Proporção de crianças que sofrem de desnutrição 
+          </h2>
+          <h3 class="ods-chart-subtitle">
+            Ano de pesquisa: 2023
+          </h3>
+        </div>
+      </div>
+
+      <div class="ods-chart-container">
+        <iframe 
+          src="https://ourworldindata.org/grapher/proportion-of-local-breeds-at-risk-of-extinction?tab=map" 
+          loading="lazy" 
+          class="ods-chart-frame"
+          allow="web-share; clipboard-write">
+        </iframe>
+        <div class="ods-chart-details">
+          <h2 class="ods-chart-title">
+            Proporção de raças de gado locais em risco de extinção
+          </h2>
+          <h3 class="ods-chart-subtitle">
+            Ano de pesquisa: 2024
+          </h3>
+        </div>
+      </div>
+
+      <div class="ods-chart-container">
+        <iframe 
+          src="https://ourworldindata.org/grapher/agricultural-export-subsidies?tab=chart"
+          loading="lazy" 
+          class="ods-chart-frame"
+          allow="web-share; clipboard-write">
+        </iframe>
+        <div class="ods-chart-details">
+          <h2 class="ods-chart-title">
+            Subsídios à exportação agrícola
+          </h2>
+          <h3 class="ods-chart-subtitle">
+            Anos de pesquisa: 1995 à 2021
+          </h3>
+        </div>
+      </div>
+
+      <div class="ods-chart-container">
+        <iframe 
+          src="https://ourworldindata.org/grapher/food-price-anomalies?tab=map"
+          loading="lazy" 
+          class="ods-chart-frame"
+          allow="web-share; clipboard-write">
+        </iframe>
+        <div class="ods-chart-details">
+          <h2 class="ods-chart-title">
+            Indicador de anomalias nos preços dos alimentos
+          </h2>
+          <h3 class="ods-chart-subtitle">
+            Ano de pesquisa: 2022
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-container">
+      <p class="font-semibold">Nos ajude a transformar o mundo por meio dos negócios</p>
+      <div>
+        <h3>Links úteis</h3>
+        <br />
+        <div class="column">
+          <a target="_blank" href="https://brasil.un.org/pt-br/sdgs" class="underline-text">Objetivos de Desenvolvimento Sustentável</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons()
+  </script>
+</body>
+</html>
