@@ -45,7 +45,7 @@ body {
 }
 
 .sidebar-button {
-  @apply inline-flex justify-center items-center gap-1 font-semibold w-full group-[.collapsed]:w-10 group-[.collapsed]:border-0 py-1.5 rounded-lg hover:bg-default-blue/70 [.active]:bg-default-blue/70 hover:text-white dark:text-zinc-100 transition-colors;
+  @apply inline-flex justify-center items-center gap-1 font-semibold w-full group-[.collapsed]:w-10 group-[.collapsed]:border-0 py-1.5 rounded-lg hover:bg-default-blue/70 [.active]:bg-default-blue/70 [.active]:text-white hover:text-white dark:text-zinc-100 transition-colors;
 }
 
 .sidebar-icon {
