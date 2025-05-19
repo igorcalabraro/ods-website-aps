@@ -1,0 +1,1 @@
+npx @tailwindcss/cli -i ./assets/styles/main-style.css -o ./assets/styles/main-style.build.css

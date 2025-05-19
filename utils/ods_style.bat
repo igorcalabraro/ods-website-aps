@@ -1,0 +1,1 @@
+npx @tailwindcss/cli -i ./assets/styles/ods-style.css -o ./assets/styles/ods-style.build.css
