@@ -5,7 +5,6 @@
   :root, :host {
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-500: oklch(63.7% 0.237 25.331);
     --color-yellow-500: oklch(79.5% 0.184 86.047);
     --color-sky-700: oklch(50% 0.134 242.749);
     --color-indigo-500: oklch(58.5% 0.233 277.117);
