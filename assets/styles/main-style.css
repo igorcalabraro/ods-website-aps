@@ -139,6 +139,19 @@ body {
   @apply size-40 transition hover:scale-105 hover:cursor-pointer;
 }
 
+/* PILARES */
+.pillars-heading {
+  @apply text-3xl font-semibold mt-4 text-center;
+}
+
+.pillars-section {
+  @apply my-8 px-20 space-y-4;
+}
+
+.pillars-content {
+  @apply text-justify text-lg indent-8;
+}
+
 /* FOOTER */
 .footer-container {
   @apply mt-8 w-full h-64 bg-default-grey dark:bg-zinc-800 text-black dark:text-zinc-100 flex items-center justify-center gap-16;
