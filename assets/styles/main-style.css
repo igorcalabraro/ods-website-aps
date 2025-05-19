@@ -44,6 +44,18 @@ body {
   @apply w-3xs bg-white dark:bg-zinc-800 flex flex-col items-center relative transform transition-all duration-300 select-none py-7 [&.collapsed]:w-13 [&.collapsed]:py-0;
 }
 
+.sidebar-to-collapse {
+  @apply absolute top-8 right-4 size-6 cursor-pointer text-black dark:text-zinc-100 hover:scale-105 transition-all outline-none border-0 group-[.collapsed]:hidden;
+}
+
+.sidebar-from-collapse {
+  @apply cursor-pointer text-black dark:text-zinc-100 mt-8 hidden group-[.collapsed]:flex;
+}
+
+.sidebar-logo {
+  @apply w-32 h-auto opacity-100 transition-opacity duration-300 delay-300 group-[.collapsed]:opacity-0 group-[.collapsed]:delay-0 group-[.collapsed]:duration-0 pointer-events-none;
+}
+
 .sidebar-buttons {
   @apply mt-16 group-[.collapsed]:mt-4 flex flex-col items-center gap-4 w-[80%];
 }

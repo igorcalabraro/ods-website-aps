@@ -21,13 +21,13 @@
 <body>
   <!-- Sidebar (aside) -->
   <aside id="sidebar" class="group sidebar">
-    <button type="button" class="aside-menu absolute top-8 right-4 size-6 cursor-pointer text-black dark:text-zinc-100 hover:scale-105 transition-all outline-none border-0 group-[.collapsed]:hidden">
+    <button type="button" class="aside-menu sidebar-to-collapse">
       <i data-lucide="menu"></i>
     </button>
-    <button type="button" class="aside-menu cursor-pointer text-black dark:text-zinc-100 mt-8 hidden group-[.collapsed]:flex">
+    <button type="button" class="aside-menu sidebar-from-collapse">
       <i data-lucide="menu"></i>
     </button>
-    <img src="./assets/ods-logo.png" alt="ODS Logo" class="w-32 h-auto opacity-100 transition-opacity duration-300 delay-300 group-[.collapsed]:opacity-0 group-[.collapsed]:delay-0 group-[.collapsed]:duration-0 pointer-events-none" />
+    <img src="./assets/ods-logo.png" alt="ODS Logo" class="sidebar-logo" />
     <div class="sidebar-buttons">
       <a href="/" class="sidebar-button">
         <i data-lucide="house" class="sidebar-icon"></i>
