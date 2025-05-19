@@ -131,6 +131,10 @@ body {
   @apply grid grid-cols-6 grid-rows-3 mt-8 mb-16 mx-auto w-fit;
 }
 
+.ods-grid-gap {
+  @apply gap-8;
+}
+
 .ods-card {
   @apply size-40 transition hover:scale-105 hover:cursor-pointer;
 }
