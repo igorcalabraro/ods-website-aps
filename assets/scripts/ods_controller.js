@@ -30,4 +30,21 @@ function moveToOds(event) {
       odsElement.css('overflow', 'hidden');
     });
   }
+
+  ScrollReveal().reveal('.ods-card', {
+    distance: '40px',
+    duration: 800,
+    easing: 'ease',
+    origin: 'bottom',
+    opacity: 0,
+    interval: 80
+  });
+
+  // ScrollReveal().reveal('.ods-data-card, .ods-chart-details', {
+  //   distance: '20px',
+  //   duration: 1000,
+  //   origin: 'right',
+  //   opacity: 0,
+  //   interval: 60
+  // });
 }
