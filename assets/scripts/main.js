@@ -1,12 +1,10 @@
 $(document).ready(function() {
   $('.aside-menu').on('click', function() {
     $('#sidebar').toggleClass('collapsed');
-    // update url with the current state
     if ($('#sidebar').hasClass('collapsed')) {
-      window.history.pushState({ sidebar: 'collapsed' }, '', '?sidebar=collapsed');
+      localStorage.setItem('sidebar', 'collapsed');
     } else {
-      // remove the sidebar parameter from the URL
-      window.history.pushState({}, '', window.location.pathname);
+      localStorage.removeItem('sidebar');
     }
   });
 
@@ -29,8 +27,8 @@ $(document).ready(function() {
     }
   }
 
-  const urlParams = new URLSearchParams(window.location.search);
-  if (urlParams.has('sidebar') && urlParams.get('sidebar') === 'collapsed') {
+  const sidebarStorage = localStorage.getItem('sidebar') || "";
+  if (sidebarStorage == 'collapsed') {
     $('#sidebar').addClass('collapsed');
     $('html, body').animate({
       scrollTop: $('#sidebar').offset().top
