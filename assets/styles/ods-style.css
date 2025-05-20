@@ -20,7 +20,7 @@
 }
 
 .ods-icon {
-  @apply size-(--ods-icon-size) mt-16;
+  @apply size-(--ods-icon-size) mt-16 hover:cursor-pointer;
 }
 
 .ods-title {
